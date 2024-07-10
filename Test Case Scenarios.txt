@@ -1,0 +1,48 @@
+Test Case Scenarios
+1. Valid Input Scenario
+Description: Both players have valid health, strength, and attack values.
+
+Player A: Name: "Alice", Health: 50, Strength: 5, Attack: 10
+Player B: Name: "Bob", Health: 100, Strength: 10, Attack: 5
+Expected Outcome: The game proceeds with turns taken as described, and one player's health eventually reaches zero, ending the game.
+
+2. Invalid Health Input (Negative)
+Description: Player A is given a negative health value.
+
+Player A: Name: "Alice", Health: -10, Strength: 5, Attack: 10
+Player B: Name: "Bob", Health: 100, Strength: 10, Attack: 5
+Expected Outcome: The program should prompt the user to re-enter a valid health value.
+
+3. Invalid Strength Input (Zero)
+Description: Player B is given a strength value of zero.
+
+Player A: Name: "Alice", Health: 50, Strength: 5, Attack: 10
+Player B: Name: "Bob", Health: 100, Strength: 0, Attack: 5
+Expected Outcome: The program should prompt the user to re-enter a valid strength value.
+
+4. Invalid Attack Input (Non-integer)
+Description: Player A is given a non-integer attack value (e.g., "abc").
+
+Player A: Name: "Alice", Health: 50, Strength: 5, Attack: "abc"
+Player B: Name: "Bob", Health: 100, Strength: 10, Attack: 5
+Expected Outcome: The program should prompt the user to re-enter a valid integer attack value.
+
+5. Edge Case: Minimum Valid Values
+Description: Both players have the minimum valid positive integer values for health, strength, and attack.
+
+Player A: Name: "Alice", Health: 1, Strength: 1, Attack: 1
+Player B: Name: "Bob", Health: 1, Strength: 1, Attack: 1
+Expected Outcome: The game proceeds and ends quickly as the health values are minimal.
+
+6. Edge Case: Maximum Dice Roll
+Description: Simulate a situation where both players roll the maximum value (6) on their dice for multiple turns.
+
+Player A: Name: "Alice", Health: 50, Strength: 5, Attack: 10
+Player B: Name: "Bob", Health: 100, Strength: 10, Attack: 5
+Expected Outcome: The game proceeds with maximum damage and defense calculated correctly for each turn.
+
+7. Edge Case: Equal Attributes
+Description: Both players have equal health, strength, and attack values.
+
+Player A: Name: "Alice", Health: 50, Strength: 5, Attack: 10
+Player B: Name: "Bob", Health: 50, Strength: 5, Attack: 10
